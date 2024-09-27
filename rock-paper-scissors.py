@@ -34,7 +34,9 @@ scissors = '''
 
 # how to choose random shape
 print("Let's play Rock, Paper, Scissors!")
-user_input = input("What do you choose? 0 for Rock, 1 for Paper, 2 for Scissors")
+user_choice = input("What do you choose? 0 for Rock, 1 for Paper, 2 for Scissors")
 
 # random number from 0 to 2, include 2
-random_num = random.randint(0, 2)
+computer_choice = random.randint(0, 2)
+
+
