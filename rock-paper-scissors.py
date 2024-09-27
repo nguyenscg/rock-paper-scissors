@@ -37,10 +37,12 @@ images = [rock, paper, scissors]
 # how to choose random shape
 print("Let's play Rock, Paper, Scissors!")
 user_choice = int(input("What do you choose? 0 for Rock, 1 for Paper, 2 for Scissors"))
+print(images[user_choice])
 
 # random number from 0 to 2, include 2
 computer_choice = random.randint(0, 2)
-print(f"Computer picked {computer_choice}")
+print("Computer chose: ")
+print(images[computer_choice])
 
 if user_choice >= 3 or user_choice < 0:
     print("Invalid choice, you lost. Try again!")
