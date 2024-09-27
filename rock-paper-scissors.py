@@ -38,10 +38,15 @@ user_choice = int(input("What do you choose? 0 for Rock, 1 for Paper, 2 for Scis
 
 # random number from 0 to 2, include 2
 computer_choice = random.randint(0, 2)
+print(f"Computer picked {computer_choice}")
 
 if user_choice == 0 and computer_choice == 2:
     print("You win!")
 elif computer_choice > user_choice:
     print("You lose!")
+elif user_choice == computer_choice:
+    print("It's a draw!")
+else:
+    print("Invalid choice, you lost. Try again!")
 
 
